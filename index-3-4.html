@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>山西国际物流有限公司</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/index.js"></script>
+		<style>/*新闻中心*/
+			body{font-family: "bodoni mt";background-color: #F5F5DC;}
+			/*引用图片*/
+			.title-img1{position: absolute;width: 30%;height: 5%;left: 10%;top: 2%;}
+			.title-img1>img{background-size: 100% 100%;border: none;}
+			.title-img2{position: absolute;width: 80%;height: 40%;right: 10%;top: 10%;background: url(img/aboutbanner.jpg);background-size: 100% 100%;border-radius: 5px;}
+			.bg-div .title-div .title-a .title-input .title-img1 .title-img2{position: absolute;width: 100%;height: auto;}
+			.title-a{position: absolute;width: 20%;height: 3%;right: 5%;top: 1%;}
+			.title-a>a{color: #27408B;padding-left: 10px;padding-right: 10px;font-size: 0.9em;text-decoration: none;}
+			.title-a>a:hover{color: #0000CD;font-size: 1em;}
+			.title-input{position: absolute;width: 30%;height: 3%;right: 3%;top: 5%;}
+			.title-input>input{color: #27408B;background-color: #1874CD;}
+			#search-txt{color: #CD0000;background-color: #FFFFFF;width: 250px;height: 30px;border-radius: 2px;border: 1px solid #EDEDED;}
+			#search-submit{color: #F8F8FF;background-color: #1874CD;width: 60px;height: 30px;border-radius: 2px;border: none;}
+			#search-submit:hover{background-color: #3A5FCD;width: 65px;}
+			.title-a2{position: absolute;width: 80%;height: 5%;left: 10%;top: 52%;background: linear-gradient(to top right, #436EEE 10%, #27408B 25%, #4169E1 90%);border-radius: 2px;}
+			.title-a2>a{margin-top:10px;padding-left: 22px;padding-right: 22px;color: #F0F0F0;font-size: 1em;}
+			.title-a2>a:hover{color: #363636;font-size: 1.1em;cursor: pointer;text-decoration: none;}
+			.main-div{position: absolute;width: 80%;right: 10%;height: 600px;top: 60%;}
+			#new1{position: absolute;width: 78%;height: 50%;right:0;top: 0;border-radius: 3px;}
+			.main-img1{float: left;}
+			.main-img2{float: inherit;margin-top:30px;}
+			.main-img2>a{padding: 20px;}
+			.main-img3{float: inherit;margin-top:30px;}
+		
+			.main-title{position: absolute;width: 100%;height: 10%;background: linear-gradient(to top right, #E6E6FA 10%, #E0EEEE 25%, #CDC673 90%);border-radius: 5px;}
+			.main-title>b{color: #EE0000;}
+			.main-title>a{position: absolute;right: 1%;color: #EE0000;font-size: 1em;}
+			.main-title>a:hover{font-size: 1.1em;color: #575757;cursor: pointer;}
+			
+			.main-txt-concent{position: absolute;width: 60%;height: auto;right: 0%;top: 20%;text-align: left;font-size: 0.9em;color: #696969;font-family: "bodoni mt";font-weight: 200;}
+			.main-txt-concent:hover{cursor: pointer;font-size: 1em;}
+			
+			.main-concent-list{position: absolute;width: 100%;height: auto;top: 10%;font-size: 1em;line-height: 2em;}
+			.main-concent-foot{position: absolute;width: 100%;height: auto;bottom: -10%;text-align: right;font-size: 1em;line-height: 2em;}
+			#new2{position: absolute;width: 20%;height: 40%;left:0%;padding-right: 20px;top: 0;border-radius: 3px;}
+			.main-concent-list1{position: absolute;width: 100%;height: auto;top: 20%;}
+			#new3{position: absolute;width: 20%;height: 30%;left:0%;padding-right: 20px;top: 25%;border-radius: 3px;}
+			#new4{position: absolute;width: 20%;height: 30%;left:0%;padding-right: 20px;top: 60%;border-radius: 3px;}
+			
+			.main-title{position: absolute;width: 100%;height: 10%;background: linear-gradient(to top right, #E6E6FA 10%, #E0EEEE 25%, #CDC673 90%);border-radius: 5px;}
+			.main-title>b{color: #EE0000;}
+			.main-title>a{position: absolute;right: 1%;color: #080808;font-size: 1em;}
+			.main-title>a:hover{font-size: 1.1em;color: #575757;cursor: pointer;}
+			
+			ul{border: 1px solid #D4D4D4;border-radius: 3px;list-style: square url("img/pagination_last.png");margin: 0px;}
+			li{float: inherit;padding-top: 10px;border-bottom: 1px solid #D4D4D4;border-radius: 3px;}
+			li>a{font-family: Microsoft YaHei;font-size: 0.9em;color: #5B5B5B;}
+			li>a:hover {font-size: 1em;color: #1874CD;cursor: pointer;}
+			li>span{float: right;}
+			
+			.foot-div{position: absolute;width: 80%;height: 100px;top: 180%;left: 10%;}
+			.foot-a1{position: absolute;width: 100%;height: 30%;top: 0;background-color: #EDEDED;border-radius: 3px;text-align: -webkit-center ;font-size: 1.4em;}
+		
+			.foot-a1>a{text-align: center;padding-left: 90px;font-size: 1em;text-decoration: none;}
+			.foot-a1>a>img{width: 200px;height: 30px;}
+			.foot-a1>a:hover{font-size: 1.1em;color: #191970;}
+			.foot-a2{position: absolute;width: 70%;height: 30%;top: 30%;left: 15%;background-color: #CDC9C9;}
+			.foot-a2>a{position: relative;padding-left: 14px;padding-right: 14px;font-size: 0.8em;text-decoration: none;}
+			.foot-a2>a:hover{font-size: 0.9em;color: #404040;}
+			.foot-a3{position: absolute;width: 50%;height: 30%;top: 60%;left: 25%;color: #CDC5BF;font-size: 0.8em;text-align: center;}
+		
+		</style>
+	</head>
+	<body>
+		<div class="bg-div">
+			<div class="title-div">
+				<div class="title-a"><a href="javascript:window.external.AddFavorite('http://sxgjwl.com.cn/Default.aspx','山西国际物流有限公司')">加入收藏</a>|<a href="">繁体中文</a></div>
+				<div class="title-img1"><img src="img/logo.jpg"></div>
+				<div class="title-input"><input id="search-txt" type="text" placeholder="请输入关键字"/><input  id="search-submit"type="button" value="搜  索"/></div>
+				<div class="title-img2"></div>
+				<div class="title-a2">
+				<a href="index.html">网站首页</a>|
+				<a href="index-2.html">关于我们</a>|
+				<a href="index-3.html">新闻中心</a>|
+				<a href="index-4.html">经营管理</a>|
+				<a href="index-5.html">企业文化</a>|
+				<a href="index-6.html">党群工作</a>|
+				<a href="index-7.html">信息公开</a>|
+				<a href="index-8.html">专题专栏</a>|
+				<a href="index-9.html">学习园地</a>
+			</div>
+			</div>
+			<div class="main-div">
+				<div class="main-1" id="new1">
+					<div class="main-title">
+						<b>新闻中心</b>
+						<a href="">当前位置：首页 - 新闻中心</a>
+					</div>
+					
+					
+					<div class="main-concent-list" id="concent4">
+						6月17日上午，国际物流公司党委召开了 “不忘初心、牢记使命”主题教育动员部署会, 对主题教育活动进行安排部署。能投党委“不忘初心、牢记使命”主题教育第一巡回指导组组长、汽运公司专职党委副书记、副董事长曹继祥同志到会指导并讲话。会议由公司党委副书记、总经理樊瑞同志主持，公司党委书记、董事长王麟作动员讲话，能投党委第一巡回指导组副组长、能投公司党委组织部副部长张鹏同志出席会议。公司班子成员，销售分公司班子成员，本部中层以上干部，机关各党支部书记参加了会议，各子公司班子成员通过视频参加会议。
+      王麟同志强调，要深刻领会主题教育是用习近平新时代中国特色社会主义思想武装全党的迫切需要，是推进新时代党的建设的迫切需要，是保持党同人民群众血肉联系的迫切需要，是实现党的十九大确定的目标任务的迫切需要，要坚持思想强党、理论强党，坚持不断提高党建质量，坚持把为职工群众谋幸福作为初心，坚持效果导向、达到预期目标。
+      王麟同志强调，要树立高标准，落实严要求，确保主题教育取得扎实成效。要认真贯彻“守初心、担使命，找差距、抓落实”这一总要求，准确把握党中央精神和能投公司党委要求，明确方向，积极推进，确保取得预期效果。要牢牢把握主题教育的根本任务，紧紧围绕主题教育的具体目标，实现理论学习有收获、思想政治受洗礼、干事创业敢担当、为民服务解难题、清正廉洁做表率。要精准聚焦主题教育的重点措施，坚持围绕中心、服务大局，把开展主题教育同完成改革发展稳定各项任务结合起来，把学习教育、调查研究、检视问题、整改落实贯穿主题教育全过程，努力取得最好成效。
+      王麟同志强调，这次主题教育时间紧、任务重、要求高，各党支部要高度重视，切实增强责任感和紧迫感，担负好支部的主体责任，抓好所在支部的主题教育，确保活动取得成效。要坚决防止“走过场”“两张皮”，做到主题教育和中心工作“两不误、两促进”。要积极宣传主题教育的重大意义和实际成效，宣传正面典型，形成学先进、当先进的良好风尚。要把开展主题教育同完成企业改革创新转型发展各项任务结合起来，确保全年“总资产周转一次”的目标任务圆满完成。在公司转型发展新局面中实现新的突破，向新中国成立70周年华诞献礼！
+      曹继祥同志对公司“不忘初心、牢记使命”主题教育动员部署工作给予了充分肯定，他强调，国际物流公司党委要进一步提高政治站位，聚焦根本任务，把握“十二字”总要求，紧扣“五句话”目标，坚持四个“贯穿始终”，力戒形式主义，抓好主体教育落实工作。要求开展主体教育活动，要紧紧围绕企业主体开展工作，坚持把学习放在首位，把主要精力放在发现问题和解决问题上，推动主体教育各项工作落到实处。
+      樊瑞同志要求，广大干部要认识到主题教育的具体目标任务，把主题教育聚焦的强大正能量转化为全面拓展新局面的实际效果。一要认真贯彻落实主题教育活动方案，确保主题教育全覆盖，高标准的组织好此次主题教育活动。二要坚持效果导向，以钉钉子精神抓好工作的落实，对准目标，积极推进，推动工作取得新成效。三要以务实作风开展主题教育，力戒形式主义、官僚主义，确保主题教育取得扎扎实实的成效。
+						<div class="main-concent-foot">
+							中国共产党山西国际物流有限公司委员会
+						</div>
+					</div>
+				</div>
+				<div class="main-1" id="new2">
+					<div class="main-title">
+						<b>新闻中心  NEWS</b>
+					</div>
+					<div class="main-concent-list1">
+						<ul>
+							<li>
+								<a>行业信息</a>
+							</li>
+							<li>
+								<a>新闻时讯</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			    <div class="main-1" id="new3">
+					<div class="main-title">
+						<b>党群工作</b>
+						<a>>></a>
+					</div>
+					<div class="main-concent-list1">
+							<ul>
+								<li>
+									<a>学习讨论落实活动</a>
+								</li>
+								<li>
+									<a>国际物流党委中心组举行学习...</a>
+								</li>
+								<li>
+									<a>全系统一批先进基层党组织和...</a>
+								</li>
+								<li>
+									<a>抓住机遇 明确目标 落实责任...</a>
+								</li>
+								<li>
+									<a>2015年山西国际物流有限公司...</a>
+								</li>
+							</ul>
+						</div>
+				</div>
+				<div class="main-1" id="new4">
+					
+					<div class="main-concent-list1">
+									<a><img src="img/aboutus2.jpg"></a>
+									<a><img src="img/erji.jpg"></a>
+									<a>400-0351-131</a>
+						</div>
+				</div>
+				
+			</div>
+			<div class="foot-div">
+				<div class="foot-a1">
+					友情链接
+					<a href="http://sxce.com.cn"><img src="img/href1.gif"></a>
+					<a href="http://www.sxeti.com"><img src="img/href2.gif"></a>
+					<a href="http://ggkf40.cctv.com/index.shtml"><img src="img/href3.jpg"></a>
+				</div>
+				<div class="foot-a2">
+				<a href="javascript:location.reload()">网站首页</a>|
+				<a href="index-2.html">关于我们</a>|
+				<a href="index-3.html">新闻中心</a>|
+				<a href="index-4.html">经营管理</a>|
+				<a href="index-5.html">企业文化</a>|
+				<a href="index-6.html">党群工作</a>|
+				<a href="index-7.html">信息公开</a>|
+				<a href="index-8.html">专题专栏</a>|
+				<a href="index-9.html">学习园地</a>
+				    </div>
+				<div class="foot-a3">
+					地址：山西省太原市东渠路嘉名国际C座7-8层　 ICP备案序号：晋ICP备05008009号</br>
+						山西国际物流有限公司 版权所有
+				
+				</div>
+			
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>山西国际物流有限公司</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/index.js"></script>
+		<style>/*关于我们*/
+			body{font-family: "bodoni mt";background-color: #F5F5DC;}
+			/*引用图片*/
+			.title-img1{position: absolute;width: 30%;height: 5%;left: 10%;top: 2%;}
+			.title-img1>img{background-size: 100% 100%;border: none;}
+			.title-img2{position: absolute;width: 80%;height: 40%;right: 10%;top: 10%;background: url(img/aboutbanner.jpg);background-size: 100% 100%;border-radius: 5px;}
+			.bg-div .title-div .title-a .title-input .title-img1 .title-img2{position: absolute;width: 100%;height: auto;}
+			.title-a{position: absolute;width: 20%;height: 3%;right: 5%;top: 1%;}
+			.title-a>a{color: #27408B;padding-left: 10px;padding-right: 10px;font-size: 0.9em;text-decoration: none;}
+			.title-a>a:hover{color: #0000CD;font-size: 1em;}
+			.title-input{position: absolute;width: 30%;height: 3%;right: 3%;top: 5%;}
+			.title-input>input{color: #27408B;background-color: #1874CD;}
+			#search-txt{color: #CD0000;background-color: #FFFFFF;width: 250px;height: 30px;border-radius: 2px;border: 1px solid #EDEDED;}
+			#search-submit{color: #F8F8FF;background-color: #1874CD;width: 60px;height: 30px;border-radius: 2px;border: none;}
+			#search-submit:hover{background-color: #3A5FCD;width: 65px;}
+			.title-a2{position: absolute;width: 80%;height: 5%;left: 10%;top: 52%;background: linear-gradient(to top right, #436EEE 10%, #27408B 25%, #4169E1 90%);border-radius: 2px;}
+			.title-a2>a{margin-top:10px;padding-left: 22px;padding-right: 22px;color: #F0F0F0;font-size: 1em;}
+			.title-a2>a:hover{color: #363636;font-size: 1.1em;cursor: pointer;text-decoration: none;}
+			.main-div{position: absolute;width: 80%;right: 10%;height: 600px;top: 60%;}
+			#new1{position: absolute;width: 78%;height: 50%;right:0;top: 0;border-radius: 3px;}
+			.main-img1{float: left;}
+			.main-img2{float: inherit;margin-top:30px;}
+			.main-img2>a{padding: 20px;}
+			.main-img3{float: inherit;margin-top:30px;}
+		
+			.main-title{position: absolute;width: 100%;height: 10%;background: linear-gradient(to top right, #E6E6FA 10%, #E0EEEE 25%, #CDC673 90%);border-radius: 5px;}
+			.main-title>b{color: #EE2C2C;font-weight: bold;font-size: 1.2em;}
+			.main-title>a{position: absolute;right: 1%;color: #242424;font-size: 0.9em;}
+			.main-title>a:hover{font-size: 1.1em;color: #575757;cursor: pointer;}
+			
+			
+			.main-txt-concent{position: absolute;width: 60%;height: auto;right: 0%;top: 20%;text-align: left;font-size: 0.9em;color: #696969;font-family: "bodoni mt";font-weight: 200;}
+			.main-txt-concent:hover{cursor: pointer;font-size: 1em;}
+			
+			.main-concent-list{position: absolute;width: 100%;height: auto;top: 10%;font-size: 1em;line-height: 2em;}
+			#new2{position: absolute;width: 20%;height: 40%;left:0%;padding-right: 20px;top: 0;border-radius: 3px;}
+			.main-concent-list1{position: absolute;width: 100%;height: auto;top: 20%;}
+			#new3{position: absolute;width: 20%;height: 30%;left:0%;padding-right: 20px;top: 25%;border-radius: 3px;}
+			#new4{position: absolute;width: 20%;height: 30%;left:0%;padding-right: 20px;top: 50%;border-radius: 3px;}
+			
+			.main-title{position: absolute;width: 100%;height: 10%;background: linear-gradient(to top right, #E6E6FA 10%, #E0EEEE 25%, #CDC673 90%);border-radius: 5px;}
+			.main-title>b{color: #EE0000;}
+			.main-title>a{position: absolute;right: 1%;color: #080808;font-size: 1em;}
+			.main-title>a:hover{font-size: 1.1em;color: #575757;cursor: pointer;}
+			
+			ul{border: 1px solid #D4D4D4;border-radius: 3px;list-style: square url("img/pagination_last.png");margin: 0px;}
+			li{float: inherit;padding-top: 10px;border-bottom: 1px solid #D4D4D4;border-radius: 3px;}
+			li>a{font-family: Microsoft YaHei;font-size: 0.9em;color: #5B5B5B;}
+			li>a:hover {font-size: 1em;color: #1874CD;cursor: pointer;}
+			
+			.foot-div{position: absolute;width: 80%;height: 100px;top: 160%;left: 10%;}
+			.foot-a1{position: absolute;width: 100%;height: 30%;top: 0;background-color: #EDEDED;border-radius: 3px;text-align: -webkit-center ;font-size: 1.4em;}
+		
+			.foot-a1>a{text-align: center;padding-left: 90px;font-size: 1em;text-decoration: none;}
+			.foot-a1>a>img{width: 200px;height: 30px;}
+			.foot-a1>a:hover{font-size: 1.1em;color: #191970;}
+			.foot-a2{position: absolute;width: 70%;height: 30%;top: 30%;left: 15%;background-color: #CDC9C9;}
+			.foot-a2>a{position: relative;padding-left: 14px;padding-right: 14px;font-size: 0.8em;text-decoration: none;}
+			.foot-a2>a:hover{font-size: 0.9em;color: #404040;}
+			.foot-a3{position: absolute;width: 50%;height: 30%;top: 60%;left: 25%;color: #CDC5BF;font-size: 0.8em;text-align: center;}
+		
+		</style>
+	</head>
+	<body>
+		<div class="bg-div">
+			<div class="title-div">
+				<div class="title-a"><a href="javascript:window.external.AddFavorite('http://sxgjwl.com.cn/Default.aspx','山西国际物流有限公司')">加入收藏</a>|<a href="">繁体中文</a></div>
+				<div class="title-img1"><img src="img/logo.jpg"></div>
+				<div class="title-input"><input id="search-txt" type="text" placeholder="请输入关键字"/><input  id="search-submit"type="button" value="搜  索"/></div>
+				<div class="title-img2"></div>
+				<div class="title-a2">
+				<a href="index.html">网站首页</a>|
+				<a href="index-2.html">关于我们</a>|
+				<a href="index-3.html">新闻中心</a>|
+				<a href="index-4.html">经营管理</a>|
+				<a href="index-5.html">企业文化</a>|
+				<a href="index-6.html">党群工作</a>|
+				<a href="index-7.html">信息公开</a>|
+				<a href="index-8.html">专题专栏</a>|
+				<a href="index-9.html">学习园地</a>
+			</div>
+			</div>
+			<div class="main-div">
+				<div class="main-1" id="new1">
+					<div class="main-title">
+						<b>公司概况</b>
+						<a href="">当前位置：首页 - 关于我们 - 公司概况</a>
+					</div>
+					
+					<div class="main-concent-list">
+						山西国际物流有限公司是山西能源交通投资有限公司全资控股子公司，成立于2011年9月14日，注册资本5亿元。公司作为山西能投在中南通道山西境内沿线战略装车点投资建设的承载主体，是山西能投打造的现代物流旗舰的核心企业。按照山西能投“建设、经营、上市”的总体战略部署，截至“十二五”末，公司已经建成了的文水、蔡家崖、长子南三个集运站，形成了集煤炭仓储、运输、装卸、配送为一体的集运服务体系。
+      公司积极实施创新驱动战略，大力发展现代煤炭物流，在园区化经营、路港矿合作、下水煤业务等领域大力开展工作，不断拓展业务领域，力求满足市场需求。经过5年多的发展，公司已经成为了集煤炭物流服务、多元化贸易、物流增值服务三位一体的现代综合煤炭物流企业。总资产突破40亿元，职工总数172人。用户遍及全国多个省、市，涉及电力、钢铁、化工等行业，并与华能、华电、国电、武钢、鞍钢等国内一些大型企业建立了长期战略合作伙伴关系。近年来，公司实现了跨越式的发展，主要经济指标连续增长，营业收入从2013年至2016年分别为6.9亿元、14.8亿元、25.1亿元、28.11亿元，实现了四年四连跳。
+    公司将在省国资委和山西能投的正确领导下，以满足市场需求为主线，以安全发展为基础，以改革创新为驱动，以和谐发展为保障，以提升服务水平为宗旨，为建设现代化煤炭物流综合企业而奋斗。
+					</div>
+				</div>
+				<div class="main-1" id="new2">
+					<div class="main-title">
+						<b>关于我们  ABOUT US</b>
+					</div>
+					<div class="main-concent-list1">
+						<ul>
+							<li>
+								<a>公司概况</a>
+							</li>
+							<li>
+								<a>公司架构</a>
+							</li>
+							<li>
+								<a>企业文化</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			    <div class="main-1" id="new3">
+					<div class="main-title">
+						<b>党群工作</b>
+						<a>>></a>
+					</div>
+					<div class="main-concent-list1">
+							<ul>
+								<li>
+									<a>学习讨论落实活动</a>
+								</li>
+								<li>
+									<a>国际物流党委中心组举行学习...</a>
+								</li>
+								<li>
+									<a>全系统一批先进基层党组织和...</a>
+								</li>
+								<li>
+									<a>抓住机遇 明确目标 落实责任...</a>
+								</li>
+								<li>
+									<a>2015年山西国际物流有限公司...</a>
+								</li>
+							</ul>
+						</div>
+				</div>
+				<div class="main-1" id="new4">
+					
+					<div class="main-concent-list1">
+									<a><img src="img/aboutus2.jpg"></a>
+									<a><img src="img/erji.jpg"></a>
+									<a>400-0351-131</a>
+						</div>
+				</div>
+				
+			</div>
+			<div class="foot-div">
+				<div class="foot-a1">
+					友情链接
+					<a href="http://sxce.com.cn"><img src="img/href1.gif"></a>
+					<a href="http://www.sxeti.com"><img src="img/href2.gif"></a>
+					<a href="http://ggkf40.cctv.com/index.shtml"><img src="img/href3.jpg"></a>
+				</div>
+				<div class="foot-a2">
+				<a href="javascript:location.reload()">网站首页</a>|
+				<a href="index-2.html">关于我们</a>|
+				<a href="index-3.html">新闻中心</a>|
+				<a href="index-4.html">经营管理</a>|
+				<a href="index-5.html">企业文化</a>|
+				<a href="index-6.html">党群工作</a>|
+				<a href="index-7.html">信息公开</a>|
+				<a href="index-8.html">专题专栏</a>|
+				<a href="index-9.html">学习园地</a>
+				    </div>
+				<div class="foot-a3">
+					地址：山西省太原市东渠路嘉名国际C座7-8层　 ICP备案序号：晋ICP备05008009号</br>
+						山西国际物流有限公司 版权所有
+				
+				</div>
+			
+			</div>
+		</div>
+	</body>
+</html>
